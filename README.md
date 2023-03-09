@@ -1,40 +1,37 @@
-# Next.js + Tailwind CSS template
+# nextGenCoders
 
-This project template aims to simplify the setup of Tailwind CSS on your Next.js app.
+A blog that act as a starting point for beginners who want to dive into the world of web development, as well as getting information about job opportunities in the field. Below is a simple wireframe of the blog.
 
-Before using this template, please make sure that your development environment is ready as stated on [Next.js](https://nextjs.org/learn/basics/create-nextjs-app/setup) website.
+![wireframe](./imgs/wireframe.png)
 
-## Create a Next.js App
+## User Story
+>
+> AS A user
+>
+> I WANT to be able to write and post blog posts on a Blog Website.
 
-To create a Next.js app with this template, open your terminal, `cd` into the directory you'd like to create the app in, and run the command below:
+## Deployment
 
-Note:
-Replace `nextjs-blog` with the project name you'd like to create, eg. `my-nextjs-app`.
+The blog was deployed in Netlify and can be accessed "here"
 
-```
-npx create-next-app nextjs-blog --use-npm --example "https://github.com/earvinpiamonte/nextjs-tailwindcss-template"
-```
+## Usage
 
-## Run development server
+## Screenshots
 
-```
-cd nextjs-blog
-```
+## Tech-Stack
+- JavaScript
+- Next.js
+- Tailwind CSS
 
-```
-npm run dev
-```
+## Credits & Resoucres
 
-## Deploy with Vercel
+Here's a list containing all the tutorials and/or references used in the project:
+- [Creating a Next.js App](https://nextjs.org/learn/basics/create-nextjs-app)
 
-Deploy this template using Vercel:
+## Contributors
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/earvinpiamonte/nextjs-tailwindcss-template)
-
-## Maintainer
-
-This project is maintained by [Noel Earvin Piamonte](https://www.earvinpiamonte.com).
-
-## Credits
-
-[Deploy button image](https://vercel.com/button) used on this `README.md` is owned by [Vercel](https://vercel.com).
+Thanks to the following people who have contributed to this project:\
+[Lilian Ortiz](https://github.com/ortizlilian) \
+[Obinna Obianuo](https://github.com/ObianuoObi)\
+[Prince Andrews Nimako](https://github.com/nimscodes) \
+[Yogita Negi](https://github.com/yogi-88)
