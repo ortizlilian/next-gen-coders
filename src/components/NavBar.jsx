@@ -6,6 +6,7 @@ import Image from 'next/image'
 
 const NavBar = () => {
   const [searchQuery, setSearchQuery] = useState('');
+  const [showPostForm, setShowPostForm] = useState(false);
   
   const handleSearch = (e) => {
     
@@ -13,9 +14,13 @@ const NavBar = () => {
     // logic to be added to display search results here
   };
 
-  const handleInputChnage = (e) => {
+  const handleInputChange = (e) => {
     setSearchQuery(e.target.value);
   };
+
+  const handleWritePostClick = () => {
+    setShowPostForm(true);
+  }
 
   return (
     <Flex bg="gray.100" justify="space-between" align="center" p="4" w="100%" as='nav' wrap='wrap'>
@@ -34,19 +39,23 @@ const NavBar = () => {
 
           </InputRightElement>
            
-          <Input placeholder="Search..." value={searchQuery} onChange={handleInputChnage} />
+          <Input placeholder="Search..." value={searchQuery} onChange={handleInputChange} />
 
-          
         </InputGroup>
-       
-        
+
       </Box>
-      
-        
-     
+   
       <Box  flex="0 0 auto" pl={[0,4]}>
-        <Button>Write Post</Button>
+        <Button onClick={handleWritePostClick}>Write Post</Button>
       </Box>
+      {/* {showPostForm && (
+        // Conditionally render the form when showPostForm is true
+        // Replace this with the actual form component
+        <Box mt={4} p={4} bg="white">
+          <Input placeholder="Post Title" />
+          <Input placeholder="Post Body" mt={2} />
+          <Button mt={2}>Submit</Button>
+        </Box>)} */}
     </Flex>
 
 
