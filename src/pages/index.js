@@ -1,10 +1,10 @@
 import React from "react";
-import NavBar from "@/components/NavBar";
 
-function Home() {
+
+const Home = () => {
   return (
     <>
-    Index
+    This is Home page
     </>
   );
 }
