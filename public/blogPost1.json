@@ -1,0 +1,8 @@
+{
+    "id": "1",
+    "title": "First Note",
+    "author": "First Author",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget faucibus elit. Nam lobortis diam risus, at pretium orci condimentum ut. Morbi dapibus, nisl maximus pharetra dictum, orci ipsum consectetur lacus, ac porttitor nibh nulla in ex. Maecenas nisl quam, pharetra eu leo non, fringilla accumsan dolor. Phasellus sit amet pretium purus, sit amet vulputate purus. Aliquam nec arcu eget orci rhoncus iaculis congue nec turpis. Aenean imperdiet, nulla eu interdum lobortis, sem nulla fringilla magna, id ultricies nisi lectus in risus. Integer dignissim quam risus, vulputate ultrices lectus scelerisque vel. Donec sed egestas urna.",
+    "date": "15/03/2023",
+    "category": "React"
+}
