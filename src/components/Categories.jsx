@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Categories = () => {
   return (
     <div>
@@ -8,4 +9,4 @@ const Categories = () => {
   )
 }
 
-export default Categories
+export default Categories;

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Box, Flex, Button, Input, InputGroup, InputRightElement, IconButton} from '@chakra-ui/react';
+// import {Box, Flex, Button, Input, InputGroup, InputRightElement, IconButton} from '@chakra-ui/react';
 import { SearchIcon } from '@chakra-ui/icons';
 import Image from 'next/image'
 
@@ -27,41 +27,44 @@ const NavBar = () => {
 
 
   return (
-    //Flex container having logo, search box and write post button
-    <Flex bg="gray.100" justify="space-between" align="center" p="4" w="100%" as='nav' wrap='wrap'>
-      <Box pr={4}>
-        <Image
-          src="/logo.JPG"
-          alt="logo"
-          width={200}
-          height={60}
+    <nav className="bg-gray-100 flex justify-between items-center p-4 w-full flex-wrap">
+    <div className="pr-4">
+      <Image src="/logo.JPG" alt="logo" width={200} height={60} />
+    </div>
+    <div className="flex items-center">
+      <div className="flex">
+        <input
+          type="text"
+          className="w-full px-4"
+          placeholder="Search..."
+          value={searchQuery}
+          onChange={handleInputChange}
         />
-      </Box>
-      <Box display="flex" alignItems="center">
-        <InputGroup size="lg">
-          <InputRightElement pointerEvents="none">
-            <IconButton aria-label="search database" icon={<SearchIcon />} onClick={handleSearch}/>
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none"
+          onClick={handleSearch}
+        >
+          <SearchIcon />
+        </button>
+      </div>
+    </div>
+    <div className="flex-0 pl-0 md:pl-4">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none" onClick={handleWritePostClick}>
+        Write Post
+      </button>
+    </div>
+  </nav>
 
-          </InputRightElement>
-           
-          <Input placeholder="Search..." value={searchQuery} onChange={handleInputChange} />
+  
+      // {/* {showPostForm && (
+      //   // Conditionally render the form when showPostForm is true
+      //   // Replace this with the actual form component
+      //   <Box mt={4} p={4} bg="white">
+      //     <Input placeholder="Post Title" />
+      //     <Input placeholder="Post Body" mt={2} />
+      //     <Button mt={2}>Submit</Button>
+      //   </Box>)} */}
 
-        </InputGroup>
-
-      </Box>
-   
-      <Box  flex="0 0 auto" pl={[0,4]}>
-        <Button onClick={handleWritePostClick}>Write Post</Button>
-      </Box>
-      {/* {showPostForm && (
-        // Conditionally render the form when showPostForm is true
-        // Replace this with the actual form component
-        <Box mt={4} p={4} bg="white">
-          <Input placeholder="Post Title" />
-          <Input placeholder="Post Body" mt={2} />
-          <Button mt={2}>Submit</Button>
-        </Box>)} */}
-    </Flex>
 
 
   );
