@@ -5,6 +5,8 @@ import Image from 'next/image'
 
 
 const NavBar = () => {
+// searchQuery:holds the current value initialized to an empty string ('') of the search query entered by the user in the search input field
+// showPostForm: determines whether the "Write Post" form should be shown or hidden initialized to false, meaning that the form is initially hidden. When the user clicks on the //"Write Post" button, the setShowPostForm function is called to set this state variable to true, which will cause the form to be displayed.
   const [searchQuery, setSearchQuery] = useState('');
   const [showPostForm, setShowPostForm] = useState(false);
   
@@ -14,15 +16,18 @@ const NavBar = () => {
     // logic to be added to display search results here
   };
 
+  // this function sets the state of searchquery to value entered by user
   const handleInputChange = (e) => {
     setSearchQuery(e.target.value);
   };
-
+  // this function when write post is click,toggles value of showPostform to show or hide form.
   const handleWritePostClick = () => {
     setShowPostForm(true);
-  }
+  };
+
 
   return (
+    //Flex container having logo, search box and write post button
     <Flex bg="gray.100" justify="space-between" align="center" p="4" w="100%" as='nav' wrap='wrap'>
       <Box pr={4}>
         <Image
