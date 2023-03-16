@@ -1,6 +1,5 @@
 import Link from "next/link";
-import FeedOutlinedIcon from '@mui/icons-material/FeedOutlined';
-import LibraryBooksOutlinedIcon from '@mui/icons-material/LibraryBooksOutlined';
+
 
 
 const Categories = () => {
@@ -14,12 +13,12 @@ const Categories = () => {
             <br/>
             <div>
                 <Link href="/categories/news"><h2 className="flex items-center ml-20">
-                    <FeedOutlinedIcon className="w-6 h-6 "/>News</h2></Link>
+                    News</h2></Link>
             </div>
             <br/>
             <div>
                 <Link href="/categories/libraries"><h2 className="flex items-center space-x-6 ml-20">
-                    <LibraryBooksOutlinedIcon className="w-6 h-6"/>Libraries</h2></Link>
+                   Libraries</h2></Link>
             </div>
             <br/>
             <div>
