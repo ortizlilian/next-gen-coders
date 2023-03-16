@@ -12,8 +12,7 @@ function Home() {
         <meta name="description" content="A blog for new coders" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />        
       </Head>
-      <main>
-      <h1 className="text-3xl font-bold underline">NextGen Coders</h1>
+      <main>      
         <div>
           <BlogCards />
         </div>
