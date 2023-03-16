@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
-import { getAllSlugs, getPostData } from '../../lib/posts';
-import styles from '../../styles/Blog.module.css'
+import { getAllSlugs, getPostData } from '../../../lib/post';
+import styles from '../../styles/Home.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
 
