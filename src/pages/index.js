@@ -1,18 +1,31 @@
+
+import Head from 'next/head'
+import { Inter } from 'next/font/google'
+import BlogCards from '@/components/blogCard'
 import Categories from "@/components/Categories";
 import React from "react";
 
 
-const Home = () => {
+function Home() {
   return (
     <>
-    This is Home page
-    <Categories />
-    </>
-  );
-}
+      <Head>
+        <title>NextGen Coders</title>
+        <meta name="description" content="A blog for new coders" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />        
+      </Head>
+      <main>      
+        <div>
+          <Categories />
+          <BlogCards />
+          
+        </div>
+      </main>
+      </>
+      )
+     }
 
 export default Home;
-
 
 
 
