@@ -1,6 +1,7 @@
 import { useState } from 'react';
 // import {Box, Flex, Button, Input, InputGroup, InputRightElement, IconButton} from '@chakra-ui/react';
 // import { SearchIcon } from '@chakra-ui/icons';
+// import { SearchIcon } from '@chakra-ui/icons';
 import Image from 'next/image'
 
 
@@ -44,7 +45,7 @@ const NavBar = () => {
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none"
           onClick={handleSearch}
         >
-          {/* <SearchIcon /> */}
+      {/* <SearchIcon /> */}
         </button>
       </div>
     </div>
