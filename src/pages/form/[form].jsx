@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import axios from 'axios';
 
 
 
@@ -24,8 +25,15 @@ function Form () {
 
     const handleSubmit =  (event) => {
         event.preventDefault();
-
-        console.log(formData);
+        
+        axios.post('/api/blog/post', formData)
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+        
 
     };
    
