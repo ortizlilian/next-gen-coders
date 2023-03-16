@@ -1,8 +1,10 @@
+
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import BlogCards from '@/components/blogCard'
+import Categories from "@/components/Categories";
+import React from "react";
 
-const inter = Inter({ subsets: ['latin'] })
 
 function Home() {
   return (
@@ -14,24 +16,16 @@ function Home() {
       </Head>
       <main>      
         <div>
+          <Categories />
           <BlogCards />
+          
         </div>
       </main>
-    </>
-  )
-}
+      </>
+      )
+     }
 
-export default Home
-
-
-
-
-
-
-
-
-
-
+export default Home;
 
 
 
@@ -173,3 +167,4 @@ export default Home
 //     </>
 //   )
 // }
+
