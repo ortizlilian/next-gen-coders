@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+// import styles from '@/styles/Home.module.css'
 import BlogCards from '@/components/blogCard'
 
 const inter = Inter({ subsets: ['latin'] })
 
-function Home({data}) {
+function Home() {
   return (
     <>
       <Head>
@@ -16,18 +16,11 @@ function Home({data}) {
       </Head>
       <main>
         <div>
-          <BlogCards data={data} />
+          <BlogCards />
         </div>
       </main>
     </>
   )
-}
-
-export async function getServerSideProps(context) {
-  const req = await fetch(`http://localhost:3000/index.json`);
-  const data = await req.json();
-
-  return { props: { data } }
 }
 
 export default Home
