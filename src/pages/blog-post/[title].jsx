@@ -10,12 +10,12 @@ export default function BlogPost(props) {
     console.log(props);
     const { postData } = props;
     return (
-        <div className={styles.main}>
-            <div className='bg-red-900'>
+        <div className='flex justify-center align-center my-10'>
+            <div className='flex flex-col justify-between gap-2 mx-auto max-w-[600px] '>
                 <Image src={postData.coverImage} width={600} height={300}/>
-                <h1>{postData.title}</h1>
+                <h1 className='text-2xl font-bold'>{postData.title}</h1>
                 <p>
-                    {postData.author} / {postData.publishDate}
+                    {postData.author} / <span className='font-normal'>{postData.publishDate}</span> 
                 </p>
                 <p>{postData.content}</p>
                 <p>🔙 {" "}

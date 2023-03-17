@@ -30,7 +30,7 @@ const NavBar = () => {
   return (
     <nav className="bg-gray-100 flex justify-between items-center p-4 w-full flex-wrap">
     <div className="pr-4">
-      <Image src="/logo.JPG" alt="logo" width={200} height={60} />
+      <Image src="/logo.JPG" alt="logo" width={100} height={30} />
     </div>
     <div className="flex items-center">
       <div className="flex">
