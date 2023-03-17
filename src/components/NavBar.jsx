@@ -3,6 +3,7 @@ import { useState } from 'react';
 // import { SearchIcon } from '@chakra-ui/icons';
 // import { SearchIcon } from '@chakra-ui/icons';
 import Image from 'next/image'
+import Link from 'next/link';
 
 
 const NavBar = () => {
@@ -22,9 +23,9 @@ const NavBar = () => {
     setSearchQuery(e.target.value);
   };
   // this function when write post is click,toggles value of showPostform to show or hide form.
-  const handleWritePostClick = () => {
-    setShowPostForm(true);
-  };
+  // const handleWritePostClick = () => {
+  //   setShowPostForm(true);
+  // };
 
 
   return (
@@ -50,9 +51,12 @@ const NavBar = () => {
       </div>
     </div>
     <div className="flex-0 pl-0 md:pl-4">
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none" onClick={handleWritePostClick}>
+      <Link href="/form/form">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none">
         Write Post
       </button>
+      </Link>
+      
     </div>
   </nav>
 
