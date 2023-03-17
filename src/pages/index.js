@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import BlogCards from '@/components/blogCard'
-import Categories from "@/components/Categories";
+// import Categories from "@/components/Categories";
 import React from "react";
 
 
@@ -16,7 +16,7 @@ function Home() {
       </Head>
       <main>      
         <div className='flex gap-20'>
-          <Categories />
+          
           <BlogCards />
           
         </div>

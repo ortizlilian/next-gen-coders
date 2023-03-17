@@ -8,21 +8,21 @@ const Categories = () => {
         <h1 className="ml-10 text-lg font-bold mb-4 text-center">Categories section</h1>
         <ul className="flex flex-col space-y-1 font-bold text-center">
             <div>
-                <Link href="/categories/tutorials">Tutorials</Link>
+                <Link href="/categories/Tutorials">Tutorials</Link>
             </div>
             <br/>
             <div>
-                <Link href="/categories/news"><h2 className="flex items-center ml-20">
+                <Link href="/categories/News"><h2 className="flex items-center ml-20">
                     News</h2></Link>
             </div>
             <br/>
             <div>
-                <Link href="/categories/libraries"><h2 className="flex items-center space-x-6 ml-20">
+                <Link href="/categories/Libraries"><h2 className="flex items-center space-x-6 ml-20">
                    Libraries</h2></Link>
             </div>
             <br/>
             <div>
-                <Link href="/categories/frameworks">Frameworks</Link>
+                <Link href="/categories/Frameworks">Frameworks</Link>
             </div>
             <br/>
         </ul>

@@ -1,0 +1,78 @@
+[
+    {
+        "id": "1",
+        "title": "First Post",
+        "author": "First Author",
+        "content": "tutorials on es 6",
+        "date": "15/03/2023",
+        "category": "Tutorials"
+    },
+    {
+        "id": "2",
+        "title": "Second Post",
+        "author": "Second Author",
+        "content": " Github news",
+        "date": "14/03/2023",
+        "category": "News"
+    },
+    {
+        "id": "3",
+        "title": "Third Post",
+        "author": "Third Author",
+        "content": "library for javascript",
+        "date": "13/03/2023",
+        "category": "Libraries"
+    },
+    
+    {
+        "id": "1",
+        "title": "First Post",
+        "author": "First Author",
+        "content": "framework next data",
+        "date": "15/03/2023",
+        "category": "Frameworks"
+    },
+    
+    {
+        "id": "1",
+        "title": "First Post",
+        "author": "First Author",
+        "content": "tutorial on javascript",
+        "date": "15/03/2023",
+        "category": "Tutorials"
+    },
+    
+    {
+        "id": "1",
+        "title": "First Post",
+        "author": "First Author",
+        "content": "google news today",
+        "date": "15/03/2023",
+        "category": "News"
+    },
+    
+    {
+        "id": "1",
+        "title": "First Post",
+        "author": "First Author",
+        "content": "modern ui library",
+        "date": "15/03/2023",
+        "category": "Libraries"
+    },
+    {
+        "id": "1",
+        "title": "First Post",
+        "author": "First Author",
+        "content": "Framework angular",
+        "date": "15/03/2023",
+        "category": "Frameworks"
+    },   
+    {
+        "id": "1",
+        "title": "First Post",
+        "author": "First Author",
+        "content": "Framework react",
+        "date": "15/03/2023",
+        "category": "Frameworks"
+    }      
+]
