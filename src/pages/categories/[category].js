@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { getBlogPostsByCategory } from "@/utils/blogUtils";
 import blogData from '@/data/blogData.json'
+import Categories from "@/components/Categories";
 
 
 export default function CategoryPage({posts}) {
@@ -8,7 +9,9 @@ export default function CategoryPage({posts}) {
     const {category} = router.query;
 
     return (
-        <div className="block my-4 max-w-lg rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-700" >
+        <div className='flex gap-20'>
+        <Categories/>
+        <div className="block my-4 max-w-lg rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-700 w-4/5" >
             <h1 className="mb-4 font-semibold text-primary dark:text-primary-500">Category: {category}</h1>
             {posts.map((post) => (
                 <div key={post.id}>
@@ -20,6 +23,9 @@ export default function CategoryPage({posts}) {
                 
             ))}
         </div>
+        </div>
+       
+        
     )
 }
 
