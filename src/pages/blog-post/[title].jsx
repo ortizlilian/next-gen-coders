@@ -3,21 +3,25 @@ import { getAllSlugs, getPostData } from '../../../lib/post';
 import styles from '../../styles/Home.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import handler from '../api/blog/getTitle';
 
 
 
-export default function BlogPost(props) {
-    console.log(props);
-    const { postData } = props;
+export default function BlogPost() {
+    const post = handler;
+
+    // console.log(props);
+
+    // const { postData } = props;
     return (
         <div className={styles.main}>
             <div className='bg-red-900'>
-                <Image src={postData.coverImage} width={600} height={300}/>
-                <h1>{postData.title}</h1>
+                {/* <Image src={postData.coverImage} width={600} height={300}/> */}
+                <h1>{post.title}</h1>
                 <p>
-                    {postData.author} / {postData.publishDate}
+                    {post.author} / {post.date}
                 </p>
-                <p>{postData.content}</p>
+                <p>{post.content}</p>
                 <p>🔙 {" "}
                     <Link legacyBehavior href="/">
                         <a className='no-underline text-black'>Back to Home</a>
@@ -36,12 +40,12 @@ export default function BlogPost(props) {
 //     }
 // }
 
-export function getServerSideProps({ params }) {
-    console.log("params", params);
-    const postData = getPostData(params.title)
-    return {
-        props: {
-            postData,
-        }
-    }
-}
+// export function getServerSideProps({ params }) {
+//     console.log("params", params);
+//     const postData = getPostData(params.title)
+//     return {
+//         props: {
+//             postData,
+//         }
+//     }
+// }
