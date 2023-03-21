@@ -1,7 +1,7 @@
 
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import BlogCards from '@/components/blogCard'
+import BlogCards from '@/components/BlogCard'
 import Categories from "@/components/Categories";
 import React from "react";
 
@@ -15,7 +15,7 @@ function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />        
       </Head>
       <main>      
-        <div className='flex gap-20'>
+        <div>
           <Categories />
           <BlogCards />
           
