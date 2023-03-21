@@ -22,7 +22,7 @@ function Footer() {
     <FaGithub/>
     <FaTwitter/>
                             </div>
-        <p className= 'text-center py-4'>Powered by Group 9</p>
+        <p className= 'text-center py-4'>2023 Copyright | All Rights Reserved</p>
         </div>
        
         
