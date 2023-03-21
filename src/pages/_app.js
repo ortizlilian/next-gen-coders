@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
   return(
     <div>
     <NavBar />
-    <Categories/>
+    {/* <Categories/> */}
     <Component {...pageProps} />
     </div> 
 
