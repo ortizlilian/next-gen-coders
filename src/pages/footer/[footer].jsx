@@ -6,17 +6,17 @@ import React from "react";
 function Footer() {
     return (
         <>
-        <div className="">
+        <div className="flex flex-col items-center">
               
-        <div className="justify-between ">
+        <div className="">
                   
-                    <ul className="flex justify-between  ">
+                    <ul className="flex">
                         <li className="text-sm py-2 ">Home</li>
                         <li className="text-sm py-2 ">About</li>
                         <li className="text-sm py-2 ">Team</li>
                     </ul>
                 </div>
-        <div className="flex py-4 justify-between ">
+        <div className="flex py-4">
     <AiOutlineInstagram />
     <FaFacebookF />
     <FaGithub/>
