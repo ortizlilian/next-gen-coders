@@ -25,7 +25,7 @@ function Form() {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        axios.post('/api/blog', formData)
+        axios.post('/api/blog/submit', formData)
             .then(function (response) {
                 console.log(response);
             })
