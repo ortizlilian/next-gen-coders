@@ -1,7 +1,5 @@
 import Link from "next/link";
 
-
-
 const Categories = () => {
   return (
     <div className="ml-10 mx-auto w-1/4 lg:mx-0 lg:max-w-none lg:flex-none bg-blue-400">
