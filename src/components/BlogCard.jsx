@@ -18,16 +18,12 @@ function Card({ item }) {
     );
 }
 
-
 export default function BlogCards() {
-    const router = useRouter()
-    console.log(router.query);
-    
     const [cardState, setCardState] = useState([]);
     
     useEffect(() => {
         axios
-        .get('/api/blog-handler/get')
+        .get('/api/blog/retrieveall')
         .then(res => {
             setCardState(res.data);
         })
