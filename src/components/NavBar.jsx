@@ -4,15 +4,20 @@ import { useState } from 'react';
 // import { SearchIcon } from '@chakra-ui/icons';
 import Image from 'next/image'
 import Link from 'next/link';
+
+
 const NavBar = () => {
 // searchQuery:holds the current value initialized to an empty string ('') of the search query entered by the user in the search input field
 // showPostForm: determines whether the "Write Post" form should be shown or hidden initialized to false, meaning that the form is initially hidden. When the user clicks on the //"Write Post" button, the setShowPostForm function is called to set this state variable to true, which will cause the form to be displayed.
   const [searchQuery, setSearchQuery] = useState('');
   const [showPostForm, setShowPostForm] = useState(false);
+  
   const handleSearch = (e) => {
+    
     console.log("Searching for:", searchQuery);
     // logic to be added to display search results here
   };
+
   // this function sets the state of searchquery to value entered by user
   const handleInputChange = (e) => {
     setSearchQuery(e.target.value);
@@ -21,6 +26,8 @@ const NavBar = () => {
   // const handleWritePostClick = () => {
   //   setShowPostForm(true);
   // };
+
+
   return (
     <nav className="bg-gray-100 flex justify-between items-center p-4 w-full flex-wrap">
     <div className="pr-4">
@@ -49,8 +56,11 @@ const NavBar = () => {
         Write Post
       </button>
       </Link>
+      
     </div>
   </nav>
+
+  
       // {/* {showPostForm && (
       //   // Conditionally render the form when showPostForm is true
       //   // Replace this with the actual form component
@@ -59,6 +69,10 @@ const NavBar = () => {
       //     <Input placeholder="Post Body" mt={2} />
       //     <Button mt={2}>Submit</Button>
       //   </Box>)} */}
+
+
+
   );
 };
+
 export default NavBar;
