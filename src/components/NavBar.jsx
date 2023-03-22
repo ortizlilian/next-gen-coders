@@ -9,8 +9,8 @@ import Link from 'next/link';
 const NavBar = () => {
 // searchQuery:holds the current value initialized to an empty string ('') of the search query entered by the user in the search input field
 // showPostForm: determines whether the "Write Post" form should be shown or hidden initialized to false, meaning that the form is initially hidden. When the user clicks on the //"Write Post" button, the setShowPostForm function is called to set this state variable to true, which will cause the form to be displayed.
-  const [searchQuery, setSearchQuery] = useState('');
-  const [showPostForm, setShowPostForm] = useState(false);
+   const [searchQuery, setSearchQuery] = useState('');
+   const [showPostForm, setShowPostForm] = useState(false);
   
   const handleSearch = (e) => {
     
