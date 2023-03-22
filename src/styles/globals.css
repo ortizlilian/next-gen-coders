@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.Space {
+  width:50vh;
+}
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;
