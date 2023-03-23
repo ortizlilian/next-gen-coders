@@ -19,7 +19,7 @@ function Card({ item }) {
     );
 }
 
-export default function getCategoryPosts({posts}) {
+export default function GetCategoryPosts({posts}) {
     const router = useRouter()
     const {category} = router.query
 
