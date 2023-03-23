@@ -1,10 +1,8 @@
-
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import BlogCards from '@/components/BlogCard'
-import Categories from "@/components/Categories";
 import React from "react";
-
+import Head from 'next/head';
+import { Inter } from 'next/font/google';
+import BlogCards from '@/components/BlogCard';
+import Categories from "@/components/Categories";
 
 function Home() {
   return (
@@ -17,8 +15,7 @@ function Home() {
       <main>      
         <div div className='flex gap-20'>
           <Categories />
-          <BlogCards />
-          
+          <BlogCards />          
         </div>
       </main>
       </>
