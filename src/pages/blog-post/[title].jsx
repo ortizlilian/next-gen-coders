@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
 import axios from "axios";
-import styles from '../../styles/Home.module.css'
 import Link from 'next/link';
 
 export default function BlogPost() {
@@ -19,18 +18,16 @@ export default function BlogPost() {
     }, []);    
 
     return (
-        <div className={styles.main}>
+        <div>
             <div>
                 <h1>{postState.title}</h1>
-                <p>
-                {postState.author} / {postState.date}
-                </p>
+                <p>{postState.author} / {postState.date}</p>
                 <p>{postState.content}</p>
-                <p>🔙 {" "}
                     <Link legacyBehavior href="/">
+                <p>🔙 {" "}
                         <a className='no-underline text-black'>Back to Home</a>
-                    </Link>
                 </p>
+                    </Link>
             </div>
         </div>
     )
