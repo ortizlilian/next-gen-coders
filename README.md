@@ -12,7 +12,7 @@ This blog was developed using Nextjs and it has a MongoDB database to persist th
 
 ## Deployment
 
-The blog was deployed on Vercel and can be accessed [here]()
+The blog was deployed on Vercel and can be accessed [here](https://next-gen-coders-rmio.vercel.app/)
 
 ## Usage
 
@@ -41,6 +41,15 @@ In addition, if the user wants to connect to MongoDB database, the steps below n
 - How to search a blog post by category: on the Home Page, simply click on the wanted category at the left hand side of the page, and all the blog posts in that category will be render on the page.
 
 ## Screenshots
+
+Desktop
+![homepage](./imgs/homepage.png)
+
+Ipad
+![homepageipad](./imgs/homepage_ipad.png)
+
+Iphone
+![homepageiphone](./imgs/homepage_iphone.png)
 
 ## Tech-Stack
 - JavaScript
