@@ -18,10 +18,10 @@ export default function BlogPost() {
     }, []);    
 
     return (
-        <div>
-            <div>
-                <h1>{postState.title}</h1>
-                <p>{postState.author} / {postState.date}</p>
+        <div className='flex justify-center align-center my-10'>
+            <div className='flex flex-col justify-between gap-2 mx-auto max-w-[600px]'>
+                <h1 className='text-2xl font-bold'>{postState.title}</h1>
+                <p className="font-bold">{postState.author} / <span className='font-normal'>{postState.date}</span></p>
                 <p>{postState.content}</p>
                     <Link legacyBehavior href="/">
                 <p>🔙 {" "}
