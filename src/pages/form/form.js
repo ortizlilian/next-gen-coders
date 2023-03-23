@@ -2,8 +2,6 @@ import React from "react";
 import { useState } from "react";
 import axios from 'axios';
 
-
-
 function Form() {
     const [formData, setFormData] = useState({
         title: '',
@@ -18,8 +16,6 @@ function Form() {
             ...formData,
             [event.target.name]: event.target.value
         });
-        console.log(event.target.value);
-
     }
 
     const handleSubmit = (event) => {
@@ -32,8 +28,6 @@ function Form() {
             .catch(function (error) {
                 console.log(error);
             });
-
-
     };
 
 
@@ -64,10 +58,9 @@ function Form() {
                             type="text" placeholder="Category"
                         />
                     </div>
-
-
-                    <button className="bg-[#1da1f2] w-full p-4 text-gray-100 mt-4">Send Message</button>
+                    <button className="bg-[#1da1f2] w-full p-4 text-gray-100 mt-4">Submit Post</button>
                 </form>
+            
             </div>
         </div >
     )
