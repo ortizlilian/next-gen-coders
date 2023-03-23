@@ -1,7 +1,6 @@
 import '@/styles/globals.css'
-
 import NavBar from "@/components/NavBar";
-import Categories from '@/components/Categories';
+import Footer from '@/components/Footer';
 
 
 
@@ -9,8 +8,8 @@ export default function App({ Component, pageProps }) {
   return(
     <div>
     <NavBar />
-    {/* <Categories/> */}
     <Component {...pageProps} />
+    <Footer />
     </div> 
 
   );
